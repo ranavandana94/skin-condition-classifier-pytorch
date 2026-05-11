@@ -147,6 +147,8 @@ Then open the browser URL shown in terminal.
 
 # 🖼️ App Features
 
+![App Screenshot](images/app_ui.png)
+
 The Streamlit application allows users to:
 
 - Upload skin lesion images
