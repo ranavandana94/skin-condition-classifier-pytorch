@@ -1,78 +1,184 @@
-🩺 Skin Condition Classification using PyTorch
+# 🩺 Skin Condition Classification using PyTorch + Streamlit
 
-Deep learning project for classifying skin lesion conditions using transfer learning with ResNet18 and PyTorch.
+A deep learning computer vision project that classifies skin lesion conditions using **PyTorch**, **Transfer Learning**, and **Streamlit**.
 
-🚀 Features
-PyTorch CNN model
-Transfer learning using ResNet18
-HAM10000 dataset
-Streamlit web app
-Image upload prediction
-Validation accuracy tracking
-🧠 Tech Stack
-Python
-PyTorch
-Torchvision
-Streamlit
-Pandas
-PIL
-📂 Dataset
+This project uses the **HAM10000 dataset** and a pretrained **ResNet18 CNN model** to predict different types of skin conditions from uploaded skin lesion images.
 
-HAM10000 Skin Lesion Dataset
+---
 
-Dataset includes 7 skin condition classes:
+# 🚀 Features
 
-Melanoma
-Basal Cell Carcinoma
-Melanocytic Nevi
-Benign Keratosis
-Dermatofibroma
-Vascular Lesions
-Actinic Keratoses
+✅ Deep Learning Image Classification  
+✅ Transfer Learning with ResNet18  
+✅ PyTorch Training Pipeline  
+✅ HAM10000 Skin Lesion Dataset  
+✅ Streamlit Web Application  
+✅ Image Upload & Prediction  
+✅ Real-Time Inference  
+✅ Validation Accuracy Tracking  
 
+---
 
-🏗️ Project Structure
-src/
-├── dataset.py
-├── train.py
-├── inference.py
+# 🧠 Tech Stack
 
-models/
-└── model.pth
+- Python
+- PyTorch
+- Torchvision
+- Streamlit
+- Pandas
+- NumPy
+- PIL (Pillow)
+- Scikit-learn
 
-data/
-├── metadata.csv
-└── images/
+---
 
-app.py
-requirements.txt
-README.md
+# 📂 Dataset
 
+Dataset used:
 
-⚙️ Installation
+**HAM10000 — Human Against Machine with 10,000 Training Images**
+
+The dataset contains 7 skin lesion classes:
+
+| Class | Description |
+|---|---|
+| akiec | Actinic Keratoses |
+| bcc | Basal Cell Carcinoma |
+| bkl | Benign Keratosis-like Lesions |
+| df | Dermatofibroma |
+| mel | Melanoma |
+| nv | Melanocytic Nevi |
+| vasc | Vascular Lesions |
+
+Dataset Source:
+
+[Kaggle HAM10000 Dataset](https://www.kaggle.com/datasets/kmader/skin-cancer-mnist-ham10000?utm_source=chatgpt.com)
+
+---
+
+# 🏗️ Project Structure
+
+```text
+Skin Condition Classification using PyTorch + Streamlit/
+│
+├── data/
+│   ├── metadata.csv
+│   └── images/
+│
+├── models/
+│   └── model.pth
+│
+├── src/
+│   ├── dataset.py
+│   ├── train.py
+│   ├── inference.py
+│
+├── app.py
+├── requirements.txt
+└── README.md
+```
+
+---
+
+# ⚙️ Installation
+
+Clone the repository:
+
+```bash
+git clone https://github.com/ranavandana94/skin-condition-classifier-pytorch.git
+```
+
+Move into project folder:
+
+```bash
+cd skin-condition-classifier-pytorch
+```
+
+Create virtual environment:
+
+```bash
+python3.10 -m venv venv
+```
+
+Activate environment:
+
+### macOS/Linux
+
+```bash
+source venv/bin/activate
+```
+
+Install dependencies:
+
+```bash
 pip install -r requirements.txt
+```
 
-🚀 Train Model
+---
+
+# 🚀 Train the Model
+
+Run:
+
+```bash
 python src/train.py
+```
+
+The trained model will be saved inside:
+
+```text
+models/model.pth
+```
 
 
-🚀 Run Streamlit App
-streamlit run app.py
+---
+
+# 📈 Model Performance
+
+| Metric | Result |
+|---|---|
+| Validation Accuracy | ~64% |
+| Model | ResNet18 |
+| Framework | PyTorch |
+
+---
+
+# 🧪 Training Details
+
+- Transfer Learning Enabled
+- ResNet18 Backbone
+- CrossEntropyLoss
+- Adam Optimizer
+- Image Normalization
+- Train/Validation Split
+
+---
+
+# 🔮 Future Improvements
+
+- Data augmentation
+- Hyperparameter tuning
+- GPU training
+- Grad-CAM visualizations
+- Streamlit Integration
+- More advanced architectures (EfficientNet, Vision Transformers)
+
+---
+
+# 📸 Sample Workflow
+
+1. Upload skin image
+2. Model preprocesses image
+3. CNN predicts skin condition
+4. Confidence score displayed
 
 
-📈 Current Performance
-Validation Accuracy: ~64%
-Model: ResNet18
-Transfer Learning Enabled
+---
 
+# 👤 Author
 
-🔮 Future Improvements
-Better augmentation
-Hyperparameter tuning
-GPU training
-Grad-CAM visualizations
-Better UI
+**Vandana Rana**
 
+GitHub:  
+[GitHub Profile](https://github.com/ranavandana94/skin-condition-classifier-pytorch)
 
-👤 Author
-Vandana Rana
