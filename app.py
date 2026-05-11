@@ -135,6 +135,7 @@ if uploaded_file is not None:
             f"Confidence Score: {confidence:.2%}"
         )
 
+
 # -----------------------------
 # Footer
 # -----------------------------
