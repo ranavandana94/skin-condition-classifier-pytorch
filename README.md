@@ -133,6 +133,29 @@ models/model.pth
 
 ---
 
+# 🚀 Run the Streamlit App
+
+Start the app:
+
+```bash
+streamlit run app.py
+```
+
+Then open the browser URL shown in terminal.
+
+---
+
+# 🖼️ App Features
+
+The Streamlit application allows users to:
+
+- Upload skin lesion images
+- Run AI-based prediction
+- View predicted skin condition
+- View confidence score
+
+---
+
 # 📈 Model Performance
 
 | Metric | Result |
@@ -160,7 +183,7 @@ models/model.pth
 - Hyperparameter tuning
 - GPU training
 - Grad-CAM visualizations
-- Streamlit Integration
+- UI improvements
 - More advanced architectures (EfficientNet, Vision Transformers)
 
 ---
