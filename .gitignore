@@ -1,0 +1,12 @@
+venv/
+venv310/
+__pycache__/
+.ipynb_checkpoints/
+*.pyc
+.DS_Store
+
+models/
+data/images/
+
+.idea/
+.vscode/

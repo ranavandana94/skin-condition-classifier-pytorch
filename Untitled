@@ -1,0 +1,69 @@
+🩺 Skin Condition Classification using PyTorch
+
+Deep learning project for classifying skin lesion conditions using transfer learning with ResNet18 and PyTorch.
+
+🚀 Features
+PyTorch CNN model
+Transfer learning using ResNet18
+HAM10000 dataset
+Streamlit web app
+Image upload prediction
+Validation accuracy tracking
+🧠 Tech Stack
+Python
+PyTorch
+Torchvision
+Streamlit
+Pandas
+PIL
+📂 Dataset
+
+HAM10000 Skin Lesion Dataset
+
+Dataset includes 7 skin condition classes:
+
+Melanoma
+Basal Cell Carcinoma
+Melanocytic Nevi
+Benign Keratosis
+Dermatofibroma
+Vascular Lesions
+Actinic Keratoses
+🏗️ Project Structure
+src/
+├── dataset.py
+├── train.py
+├── inference.py
+
+models/
+└── model.pth
+
+data/
+├── metadata.csv
+└── images/
+
+app.py
+requirements.txt
+README.md
+⚙️ Installation
+pip install -r requirements.txt
+🚀 Train Model
+python src/train.py
+🚀 Run Streamlit App
+streamlit run app.py
+📈 Current Performance
+Validation Accuracy: ~64%
+Model: ResNet18
+Transfer Learning Enabled
+🔮 Future Improvements
+Better augmentation
+Hyperparameter tuning
+GPU training
+Grad-CAM visualizations
+Better UI
+👤 Author
+
+Vandana Rana
+
+GitHub:
+GitHub Profile
